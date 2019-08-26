@@ -1,0 +1,18 @@
+--------------------Configuration: venn1 - Java Virtual Machine Debug--------------------
+Begining build with project "D:\work\java\pub\logic\venn\venn1.dsp", at root.
+Active configuration is Java Virtual Machine Java Project (based on Java Virtual Machine Java Project)
+
+Project's tools are:
+			"Java Compiler" with flags "/w4 /g "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP16.tmp" with contents <D:\work\java\pub\logic\venn\venn1.java>
+Compiling...
+Microsoft (R) Visual J++ Compiler Version 1.01.7022
+Copyright (C) Microsoft Corp 1996. All rights reserved.
+
+
+
+
+venn1 - 0 error(s), 0 warning(s)

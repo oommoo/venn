@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Venn Diagramming</title>
+</head>
+<body background="images/venn-bg.gif">
+<table>
+<tr>
+<td>
+<img src="images/venn-eb.gif">
+</td>
+<td>
+Venn diagrams are an interesting method for rendering triadic relations on
+a two dimensional drawing surface.  Certain marks (or annotations) indicate
+the existence of variables or constants in the distinguishable regions.
+</td>
+</tr>
+</table>
+
+The <A HREF="http://www.phil.uga.edu/~nute/PHIL1500/">PHIL 1500</a>
+ - Logic and Critical Thinking course covers two chapters in the
+textbook on these diagrams.
+Implementing  interactive
+<A HREF="http://www.phil.uga.edu/~nute/PHIL1500/venn">venn diagramming</a>
+exercises,  as a teaching aide, was adopted by the defeasible graph group as
+viable ground for java experimentation.
+<p>
+Using java we are able to deliver this diagrammatic function via the existing
+library and computer lab workstations running available web browsers.
+<p>
+There are 3 example sets of exercises currently defined :
+
+<ol>
+<li>   <a href="set-one/">One</a>,...,
+<li>   <a href="set-four/">Four</a>, and
+<li>   <a href="set-five/">Five</a>
+</ol>
+
+We are currently working on methods to ease the creation of exercise sets.
+If you are interested in working on the source code, please refresh your
+local copy, since it now has an AppletFrame class definition and takes
+a command line parameter for the codebase in html generation.
+
+<applet
+    codebase="./"
+    code="venn1.class"
+    width=600
+    height=380>
+    <param name=taga value="Tom and Dick are both programmers, but only Tom
+     writes in java.">
+    <param name=tagb value="Only java programmers diagram in web pages,
+     and even some java programmers don't diagram in the web.">
+    <param name=tagc value="So Dick doesn't diagram in web pages.">
+    <param name=circle1 value="P">
+    <param name=circle2 value="J">
+    <param name=circle3 value="W">
+    <param name=region1 value="t,d">
+    <param name=region4 value="d,x">
+    <param name=region6 value="shaded,t,d">
+    <param name=region7 value="d">
+    <param name=valid   value="true">
+</applet>
+<br>
+Take a look at the java
+<a href="venn1.java">source</a>, or
+get the entire version 1.2 package in <i>
+<a href="http://ai.uga.edu/~bancroft/Venn.zip">ZIP format</a></i>,
+which solves some of the relative addressing issue mentioned below.
+<p>
+Notice that there are a few immediate venn exercise package considerations :
+<ol>
+<li>change existing exercises to use relative addressing on codebase tags,
+<li>have some installation / configuration for mailto: tag for comments and questions, and
+<li>use relative addressing for references to venn and general class materials ...
+</ol>
+<p>
+
+The first consideration was certainly desirable and simply involved
+finger sweat over the existing exercises (or a fancy sed script;).
+The second consideration is a tad more involved since a professor will
+either want to answer the questions directly, or assign that to the
+graduate student, teaching assistant, or lab person each year, semester,
+or quarter as appropriate.  Needless to say the install / maintenance tool
+has not been completed.  The last consideration was decided on general
+principles of portability . . .
+<p>
+<h3>From SMTP <a href="history.html">discussions</a></h3>
+from the following contributors :
+<ul>
+<li>
+<a href="mailto:dnute@ai.uga.edu">Donald Nute</a>
+<li>
+<a href="mailto:Girish_Padmalayam@atlanta.sterling.com">Girish Padmalayam</a>
+<li>
+<a href="mailto:Peter_Mastin@atlanta.sterling.com">Peter Mastin</a>
+<li>
+<a href="mailto:bancroft@ai.uga.edu">Vic Bancroft</a>
+</ul>
+<p><p>
+<center>
+<table>
+<tr>
+<td>
+Last modified
+</td>
+<td>
+Comments and suggestions :
+</td>
+<td align=center colspan=2>
+Return to Dr. Nute's
+</td>
+</tr>
+<tr>
+<td>
+08/30/98
+</td>
+<td>
+<a href="mailto:dnute@ai.uga.edu">dnute@ai.uga.edu</a><BR>
+</td>
+<td>
+<A HREF="./">venn  diagramming</A><BR>
+</td>
+<td>
+<A HREF="../">class materials.</A>
+</td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+

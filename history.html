@@ -1,0 +1,513 @@
+<html>
+<head>
+<title>Historical Discussion</title>
+</head>
+<body>
+<body background="images/venn-rbg.gif">
+<table>
+<tr>
+<td>
+<img src="images/venn-eb.gif">
+</td>
+<td>
+<h4>From SMTP discussions from the following contributors :</h4>
+<ul>
+<li>
+<a href="mailto:dnute@ai.uga.edu">Donald Nute</a>
+<li>
+<a href="mailto:Girish_Padmalayam@atlanta.sterling.com">Girish Padmalayam</a>
+<li>
+<a href="mailto:Peter_Mastin@atlanta.sterling.com">Peter Mastin</a>
+<li>
+<a href="mailto:bancroft@ai.uga.edu">Vic Bancroft</a>
+</ul>
+<p><p>
+</td>
+</tr>
+</table>
+
+
+<table BORDER=3>
+<tr>
+<td>
+I'm not really too concerned about grading excercises over the Web,
+although other instructors who might be interested in the system might
+be. I base my grades entirely on in-class exams. I just use the Web
+pages as an extra resource for students. Of course, even with this in
+mind a program that corrected exercises for students would be great.
+By the way: I've been getting messages from people out on the net who
+have found my critical thinking Web pages and used them to supplement
+the material they have been assigned in similar courses. At least one
+instructor has used some of my exercises in his class. If half a
+dozen people send me a message saying how helpful they found this
+material, how many have actually used it? One thing I would like to
+do is get a counter up on some of this stuff.
+<p><p>
+Back to current business: for this fall, I would be tickled pink to
+have a program available that could pull examples from a file, present
+them, let the student work them, and then either display the correct 
+solution from a file or actually check the student's work on the fly.
+As I said, I don't care about the bookkeeping right now.
+<p><p>
+</td>
+</tr> 
+
+<tr>
+<td>
+     Good. Sounds like this will be easier in the short run then. Don, when 
+     you get a chance to go take a look at the venn program think about 
+     what we need to add for a student to be able to use it. Currently the 
+     class names are passed to the java program as parameters. Perhaps we 
+     want to pass sentences. I'm not sure. If the typical excercise is 
+     translation and then validation we need to add the ability to 
+     translate. 
+<p><p>
+</td>
+</tr> 
+
+<tr>
+<td>
+I'm not sure we want to use "existential quantifier" in the Venn
+Diagram program because this isn't a term we usually use when we
+present this material. I think "constant" and "variable" would be
+better choices. But that's minor. Another problem I see is that
+whenever I check either box, the corresponding letter shows up in
+area 8. This shouldn't happen. And I don't see any way to remove
+a letter. Of course, you can clear and start over, but it would
+be nice if clicking on an area of the diagram would toggle the
+active process on and off. I also found I could check both "individual"
+and "existential quantifier" at the same time. I suggest these should
+be radio buttons.
+<p><p>
+
+Actually, there are four operations that I want students to be able
+to perform on a diagram: shade an area, add a constant to an area, add
+a variable to an area, and cross out a constant in an area. Crossing out a
+constant is not the same as erasing it. Suppose we are told that Socrates
+is a mortal, but then we learn he is also Greek. The first piece of
+information prompts us to put a constant in each subarea for mortal; the
+second prompts us to cross out the constants in the subarea for Greeks. I
+don't want the constant to be erased; I want to know that it was put there
+when the first piece of information was processed. So we need a "strike
+out" function - but only for constants. The only way a variable can be
+struck out of an area is if we shade the area.
+<p><p>
+
+So can you set up radio buttons for four functions: shade, add constant,
+strike out constant, and add variable? And it would help if all the
+functions actually toggled so they could erase errors without starting
+over.
+<p><p>
+
+I don't think we need a translation capability in the first version, but I
+do want the students to label the diagrams themselves. An important part
+of an exercise is figuring out which nouns/adjectives in the English
+sentences represent the significant classes for the diagram. So we need
+three fields where they can enter the names for the classes.
+<p><p>
+
+Once we get all this, we can think about how to incorporate it into an
+exercise. We want to be able to check student input for correctness and
+to provide possibly canned explanations for examples. Let's work on the
+input screen first. We need a place on the screen where the English text
+can be displayed. Can you guys have all this by last Monday?
+<p><p>
+</td>
+</tr> 
+<tr>
+<td>
+<blockquote>
+<pre>
+>And I don't see any way to remove a letter. Of course, you can 
+>clear and start over, but it would be nice if clicking on an 
+>area of the diagram would toggle the
+>active process on and off. 
+<p><p>
+</pre>
+</blockquote>
+
+Explain this further. I tried to figure out a good way to do this and 
+came up blank. 
+<p><p>
+
+
+<blockquote>
+<pre>
+>I also found I could check both "individual" and "existential 
+>quantifier" at the same time. I suggest these should be radio buttons.
+</pre>
+</blockquote>
+<p><p>
+
+I was going to grey one out if the other were checked. Radio buttons 
+would save a keystroke though. 
+     
+<blockquote>
+<pre>
+>Actually, there are four operations that I want students to be able
+>to perform on a diagram: shade an area, add a constant to an area, add
+>a variable to an area, and cross out a constant in an area. Crossing out 
+>a constant is not the same as erasing it. Suppose we are told that 
+>Socrates is a mortal, but then we learn he is also Greek. The first piece 
+>of information prompts us to put a constant in each subarea for mortal; 
+>the second prompts us to cross out the constants in the subarea for 
+>Greeks. I don't want the constant to be erased; I want to know that it 
+>was put there when the first piece of information was processed. So we 
+>need a "strike out" function - but only for constants. The only way a 
+>variable can be struck out of an area is if we shade the area.
+<p><p>
+</pre>
+</blockquote>
+
+a strike out function could be a sub-checkbox on the constant group. 
+     
+<blockquote>
+<pre>
+>So can you set up radio buttons for four functions: shade, add constant, 
+>strike out constant, and add variable? And it would help if all the 
+>functions actually toggled so they could erase errors without starting 
+>over.
+<p><p>
+</pre>
+</blockquote>
+
+I dont understand the toggle concept. You mean have a check box that if 
+"on" would remove a variable or constant in the selected segment? How to 
+know which variable or constant if there are more than one? 
+<p><p>
+
+    
+<blockquote>
+<pre>
+>I don't think we need a translation capability in the first version, but I 
+>do want the students to label the diagrams themselves. An important part 
+>of an exercise is figuring out which nouns/adjectives in the English 
+>sentences represent the significant classes for the diagram. So we need 
+>three fields where they can enter the names for the classes.
+<p><p>
+</pre>
+</blockquote>
+
+
+Yeah. Vic, Girish and I talked about that a little already.  We thought 
+about implementing that in java as a cgi program. Or alternativly we could 
+do it in the same progam but have a "first" screen in the applet with 3 
+entry fields for the 3 classes and a submit button. 
+     
+<blockquote>
+<pre>
+>Once we get all this, we can think about how to incorporate it into an 
+>exercise. We want to be able to check student input for correctness and 
+>to provide possibly canned explanations for examples. Let's work on the 
+>input screen first. We need a place on the screen where the English 
+>text can be displayed. Can you guys have all this by last Monday?
+<p><p>
+</pre>
+</blockquote>
+
+its already shrink wrapped.  
+<p><p>
+</td>
+</tr> 
+<tr>
+<td>
+The lines connecting letters in the diagrams isn't necessary. I thought it
+might help the students keep track of things, but in fact I now think it
+makes the diagrams just damn too messy. I plan to leave this out when I
+teach Venn diagrams this fall.
+<p><p>
+</td>
+</tr> 
+<tr>
+<td>
+<blockquote>
+<pre>
+>There have been some major revisions to the Venn diagrammer code!
+>These modifications include the new grid layout (thanks to Girish), a few 
+>bug fixes, 
+<p><p>
+</pre>
+</blockquote>
+
+BUGS! WHERE!!! There were NO bugs in that code ....unless you guys 
+introduced them :) 
+<p><p>
+
+<blockquote>
+<pre>
+>and the html changes.  There were also a few new methods to facilitate 
+>the passing parameters into the applet for a `prefered marking' . . . 
+>Each circle can be given a label. Each region that has a marking would be 
+>mentioned by name, e.g., region1, region2, ..., region8.  A marking would 
+>be a comma seperated variable string using the atomics: shaded, a, b, c, 
+>!a, !b, !c, x, y, z.  Given the way the applet currently works, a region 
+>can have at most 3 segment variables, e.g., constants, negated constants 
+>or variables.  the overall validity would be marked true or false.
+<p><p>
+</pre>
+</blockquote>
+
+do you plan to use the classes Java provides to do the parsing? 
+     
+<blockquote>
+<pre>
+>if this is acceptable I will modify the venn1 applet class to check for 
+>hese parameters, record those passed, and display a canvass with the 
+>preffered marking in the bottom right corner of the grid.  This way we can 
+>begin to create html for additional exercise sets.  
+<p><p>
+</pre>
+</blockquote>
+
+sounds perfect ...
+<p><p>
+
+<blockquote>
+<pre>
+>What sort of widget >should be used to show/hide the `solution' canvass?
+<p><p>
+</pre>
+</blockquote>
+
+not sure what you mean here...if you wanna see how to hide panels take a 
+look at the code that makes the "variable" - "constant" panels switch.... 
+     
+<blockquote>
+<pre>
+>Can we use the `submit' push button (appropriately relabled) ?
+<p><p>
+</pre>
+</blockquote>
+
+perfect ...
+     
+<blockquote>
+<pre>
+>BTW, if we use a single parameter for the text of the exercise, we could 
+>use a `word wrapper' to chop the strings to fit in the text window.
+<p><p>
+</pre>
+</blockquote>
+
+then we can use the remaining two parameters to pass in pictures on 
+me.... that we display when the student gets the correct answer .... 
+</td>
+</tr> 
+<tr> 
+<td>
+<blockquote>
+<pre>
+> There have been some major revisions to the Venn diagrammer code!
+>  
+> These modifications include the new grid layout (thanks to Girish), a few
+> bug fixes, and the html changes.  There were also a few new methods to
+> facilitate the passing parameters into the applet for a `prefered marking'
+> . . . 
+> 
+> Each circle can be given a label. Each region that has a marking would be
+> mentioned by name, e.g., region1, region2, ..., region8.  A marking would
+> be a comma seperated variable string using the atomics: shaded, a, b, c,
+> !a, !b, !c, x, y, z.  Given the way the applet currently works, a region
+> can have at most 3 segment variables, e.g., constants, negated constants
+> or variables.  the overall validity would be marked true or false.
+<p><p>
+</pre>
+</blockquote>
+</td>
+</tr> 
+<tr> 
+<td>
+Do !a, !b, and !c mean a, b, and c, respectively, "crossed-out"?
+ 
+<blockquote>
+<pre>
+> So for example the applet tag for
+> 
+>    http://ai.uga.edu/~bancroft/venn/set-one/vennx10.html
+> 
+> might be
+> 
+> <applet
+>     codebase="http://ai.uga.edu/~bancroft/classpath/d-venn/"
+>     code="venn1.class"
+>     id=venn1
+>     width=630
+>     height=440 >
+>     <param name=taga value="Tom and Dick are both singers, but only Tom
+>      sings opera.">
+>     <param name=tagb value="Only opera singers sing at the Metropolitan,
+>      and even some opera singers don't sing at the Metropolitan.">
+>     <param name=tagc value="So Dick doesn't sing at the Metropolitan.">
+>     <param name=circle1 value="S">
+>     <param name=circle2 value="O">
+>     <param name=circle3 value="M">
+>     <param name=region1 value="a,b">
+>     <param name=region4 value="b,x">
+>     <param name=region6 value="shaded,a,b">
+>     <param name=region7 value="b">
+>     <param name=valid   value="true">   
+> </applet>
+<p><p>
+</pre>
+</blockquote>
+
+This looks fine. Of course, we would eventually like a tool that lets
+the instructor solve the problem and then generates the above code
+automatically. But I can write this stuff without much effort.
+ 
+<blockquote>
+<pre>
+> If this is acceptable I will modify the venn1 applet class to check for
+> these parameters, record those passed, and display a canvass with the
+> preffered marking in the bottom right corner of the grid.  This way we can
+> begin to create html for additional exercise sets.  What sort of widget
+> should be used to show/hide the `solution' canvass?
+> 
+> Can we use the `submit' push button (appropriately relabled) ?
+<p><p>
+</pre>
+</blockquote>
+
+Maybe relabel it `Solution' and make it toggle so the student can
+reveal/hide/reveal/hide/rev....  you get the idea
+<p><p>
+
+<blockquote>
+<pre>
+> BTW, if we use a single parameter for the text of the exercise, we could
+> use a `word wrapper' to chop the strings to fit in the text window.
+<p><p>
+</pre>
+</blockquote>
+
+I prefer this if it's not a big problem.
+<p><p>
+
+Lookin' better and better.
+<tr> 
+<td>
+<blockquote>
+<pre>
+> > BUGS! WHERE!!! There were NO bugs in that code ....unless you guys 
+> > introduced them :) 
+> Sad but true . . . you could add the same constant or variable to a region
+> multiple times . . . OH YEA, that is not a bug, just an inconvenience
+> since you could simply clear the region and remark it !-8)
+<p><p>
+</pre>
+</blockquote>
+
+Yeah, I mentioned this before.
+ 
+<blockquote>
+<pre>
+> > Do !a, !b, and !c mean a, b, and c, respectively, "crossed-out"?
+> Yes, it is sort of a c/c++/java style syntax, but It would be easy to
+> also allow ~a, ~b, ~c as aliases for the crossed-out constants . . . 
+<p><p>
+
+No problem - I move from one notation to another sehr schnell.
+<p><p>
+
+<blockquote>
+<pre>
+> > This looks fine. Of course, we would eventually like a tool that lets
+> > the instructor solve the problem and then generates the above code
+> > automatically. But I can write this stuff without much effort.
+> This can be rolled in to the `DataFlavor' for our serialized venn objects,
+> the same mechanism to transmit completed venn diagrams will serve to
+> create preferred markings for `future' exercises . . . Are there any
+> natural language examples that are philosophically problematic to mark?
+<p><p>
+</pre>
+</blockquote>
+
+I suspected as much. I'm not aware of philosophically difficult ones,
+but some are linguistically difficult to diagram or to symbolize in FOL.
+Foreign students often translate "All that glistens isn't gold" into
+(x)(Glisten(x) -> ~gold(x)) rather than the correct (Ex)(Glisten(x) &
+~ gold(x)). They would also get the Venn diagram wrong in all likelihood.
+ 
+<blockquote>
+<pre>
+> However, please feel free to proceed w/ the creation of appriopriate
+> markings for the current set-one exercises and those accessible as set
+> four and five from the venn web pages . . . in addition to any other ones.
+> 
+> I will conform to this rather simple syntax for the java language
+> StringTokenizer . . . 
+<p><p>
+</pre>
+</blockquote>
+
+<blockquote>
+<pre>
+> BTW, how does it look in 640x480 VGA . ? !
+<p><p>
+
+It still doesn't fit on the screen, but it looks like it should. There is
+way too much empty space between the diagram and the text and buttons. If
+you close this, it will probably fit. Also there is excess space to the
+left of the diagram. Removing this will make more space to the right of
+the diagram to display the solution. Do you plan to move the buttons
+to the right of the diagram and have the solution cover them? I see some
+of the links are still at the top. I still suggest that you move all of
+them to the bottom. Other than that - and the strange persistence of
+something that calls itself and "Index Map", it's looking good.
+</td>
+</tr> 
+<tr> 
+<td> 
+     
+There are two new sets of exercises defined :
+     
+   <a href="http://ai.uga.edu/~bancroft/venn/set-four/exercises.html">Four</a>
+     
+and 
+     
+   <a href="http://ai.uga.edu/~bancroft/venn/set-five/exercises.html">Five</a>
+     
+Please review these markings bearing in mind that the constants will 
+change one more time to match the recent revisions allowing a-t for 
+constant symbols . . . 
+     
+BTW, Anyone interested in havin a -theory- oriented meeting next week ???
+<p><p>
+</td>
+</tr> 
+</table>
+<p>
+
+<center>
+<table>
+<tr>
+<td>
+Last modified 
+</td>
+<td>
+Comments and suggestions : 
+</td>
+<td align=center colspan=2>
+Return to Dr. Nute's
+</td>
+</tr>
+<tr>
+<td>
+08/30/98
+</td>
+<td>
+<a href="mailto:dnute@ai.uga.edu">dnute@ai.uga.edu</a>
+</td>
+<td>
+<A HREF="./">venn  diagram</A><BR>
+</td>
+<td> 
+<A HREF="../">class materials.</A>
+</td>
+</tr>
+</table>
+</center>
+
+
+</body>
+</html>
